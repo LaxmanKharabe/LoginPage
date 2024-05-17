@@ -21,7 +21,7 @@ body {
 
 .row {
     display: flex;
-    width: 100%;
+    width: 75%;
     height: 100%;
     border-radius: 50px;
     background: rgb(255, 255, 255);
@@ -60,11 +60,11 @@ body {
 .lftBoxTxt, .rftBoxTxt {
     font-style: normal;
     font-weight: bold;
+    font-size: 2vw;
 }
 
 .lftBoxTxt {
     color: rgb(249, 226, 186);
-    font-size: 2.5vw;
 }
 
 .rftBoxTxt {
@@ -152,23 +152,17 @@ body {
     color: rgb(25, 176, 126);
 }
 
-/* Responsive styles */
-@media only screen and (max-width: 600px) {
-    .container { padding: 10px; overflow: hidden !important; }
-    .inputBox label { font-size: 3.4vw; }
-    .row { overflow: hidden !important; }
-    .lftBox { gap: 10px; }
-    .lftBoxTxt { text-align: left; }
-    .rftBox { padding: 25px; margin-top: 3px; gap: 18px; }
-    .lftBoxTxt { font-size: 5vw; }
-    .rftBoxTxt { font-size: 4vw; }
-    .btnSubmit { font-size: 3.4vw; height: 55px; }
-    .formContainer { gap: 30px; }
-    .inputFieldsCon { gap: 30px; }
-    .termTxtCon { margin-top: 34px; }
-    .textmTxt { font-size: 2.5vw; }
-}
+.lftBoxTxt, .rftBoxTxt { font-size: 2vw; }
+.rftBox { gap: 30px; }
+.formContainer { gap: 30px; }
+.inputFieldsCon { gap: 20px; }
+.inputBox input { line-height: 2vw; }
+.inputBox label { font-size: 1vw; }
+.btnSubmit { font-size: 1.5vw; height: 2vw; }
+.termTxtCon { margin-top: 30px; }
+.textmTxt { font-size: 0.9vw; }
 
+/* Responsive styles */
 @media only screen and (max-width: 992px) {
     .row { flex-direction: column; align-items: center; height: auto; }
     .lftBox { gap: 20px; }
@@ -182,16 +176,19 @@ body {
     .termTxtCon { margin-top: 10px; }
 }
 
-/* @media only screen and (max-width: 1024px){
-    .container { width: 100%; }
-    .row { width: 75%; }
-    .lftBoxTxt, .rftBoxTxt { font-size: 2vw; }
-    .rftBox { gap: 30px; }
+
+@media only screen and (max-width: 600px) {
+    .container { padding: 10px; overflow: hidden !important; }
+    .inputBox label { font-size: 3.4vw; }
+    .row { width: 80%; }
+    .lftBox { gap: 10px; }
+    .lftBoxTxt { text-align: left; }
+    .rftBox { padding: 25px; margin-top: 3px; gap: 18px; }
+    .lftBoxTxt { font-size: 5vw; }
+    .rftBoxTxt { font-size: 4vw; }
+    .btnSubmit { font-size: 3.4vw; height: 55px; }
     .formContainer { gap: 30px; }
-    .inputFieldsCon { gap: 20px; }
-    .inputBox input { line-height: 2vw; }
-    .inputBox label { font-size: 1vw; }
-    .btnSubmit { font-size: 1.5vw; height: 2vw; }
-    .termTxtCon { margin-top: 30px; }
-    .textmTxt { font-size: 0.9vw; }
-} */
+    .inputFieldsCon { gap: 30px; }
+    .termTxtCon { margin-top: 34px; }
+    .textmTxt { font-size: 2.5vw; }
+}
